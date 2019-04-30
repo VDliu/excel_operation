@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class ExcelManager {
     private static ExcelManager singleInstance = null;
-    private final static String ROOT_PATH = "D:\\data\\";
+    private static String ROOT_PATH = "D:\\data\\";
     private String small;
     private String big;
     private FileInputStream streamSmall;
@@ -29,6 +29,11 @@ public class ExcelManager {
     private static List<Row> delta_big = new ArrayList<>();
     private static List<Row> delta_small = new ArrayList<>();
     private static List<Row> common = new ArrayList<>();
+
+    public ExcelManager setRootPath(String rootPath) {
+        ROOT_PATH = rootPath;
+        return this;
+    }
 
     public static synchronized ExcelManager getSingleInstance() {
         if (singleInstance == null) {

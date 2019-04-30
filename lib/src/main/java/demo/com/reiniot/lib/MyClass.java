@@ -29,9 +29,7 @@ public class MyClass {
 //        FileInputStream stream2 = getStream("D:\\data\\mobile.xlsx");
 //        FileInputStream stream1 = getStream("D:\\data\\mobile_all.xlsx");
 //        getDelataRow(stream1, 3, stream2, 0);
-      ExcelManager manager =  ExcelManager.getSingleInstance();
-      manager.setBigFilePath("D:\\data\\mobile_all.xlsx").setBigDentifyId(3).setSmallFilePath("D:\\data\\mobile.xlsx").setSmallDentifyId(0);
-      manager.excute();
+
     }
 
     static private FileInputStream getStream(String path) {
