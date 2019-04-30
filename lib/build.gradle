@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //    implementation files('libs/poi-4.1.0.jar')
+    //    implementation files('libs/poi-examples-4.1.0.jar')
+    //    implementation files('libs/poi-excelant-4.1.0.jar')
+    //    implementation files('libs/poi-ooxml-4.1.0.jar')
+    //    implementation files('libs/poi-ooxml-schemas-4.1.0.jar')
+    //    implementation files('libs/poi-scratchpad-4.1.0.jar')
+    implementation files('libs/aa-poi-3.10-min-0.1.5.jar')
+    implementation files('libs/aa-poi-ooxml-schemas-3.10-reduced-more-0.1.5.jar')
+    implementation files('libs/ooxml-schemas-1.0.jar')
+    implementation files('libs/poi-ooxml-schemas-3.10-reduced-less.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
